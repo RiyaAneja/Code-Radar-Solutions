@@ -13,6 +13,6 @@ int main(){
     }
     else{
         printf("Special Character");
-    }WQ
+    }
     return 0;
 }
