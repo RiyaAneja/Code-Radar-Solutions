@@ -43,7 +43,7 @@ int main(){
             printf("31");
             break;
         }
-        default{
+        default:
             case 2:
             printf("28");
             break;
