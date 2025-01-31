@@ -48,6 +48,6 @@ int main(){
             printf("28");
             break;
         }
-    }
+    
     return 0;
 }
