@@ -9,7 +9,12 @@ int main(){
             printf("%d",a+b);
             break; 
         case '-':
-            printf("%d",a-b);
+            if(a>b){
+                 printf("%d",a-b);
+            }
+            else{
+                printf("");
+            }
             break;
         
         case '*':
