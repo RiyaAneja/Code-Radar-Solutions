@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(){
-    int a,b,r;
-    char str[2];
+    int a,b;
+    char op;
     scanf("%d %d",&a,&b);
-    scanf("%s",&str);
-    switch(str){
+    scanf("%c",&op);
+    switch(op){
         case '+':
             printf("%d",a+b);
             break;
