@@ -5,21 +5,21 @@ int main(){
     scanf("%d %d",&a,&b);
     scanf("%s",&str);
     switch(str){
-        case '+'{
+        case '+':
             printf("%d",a+b);
             break;
-        }
-        case '-'{
+        
+        case '-':
             printf("%d",a-b);
             break;
-        }
-        case '*'{
+        
+        case '*':
             printf("%d",a*b);
-        }
-        default{
+        
+        default:
             printf("%d",a/b);
             
-        }
+        
     }
         return 0;
   
