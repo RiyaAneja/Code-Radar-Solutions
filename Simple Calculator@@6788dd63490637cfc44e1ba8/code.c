@@ -24,7 +24,7 @@ int main(){
             }
             break;
         default:
-            printf("Invalid");  
+            printf(" ");  
     }
         return 0;
   
