@@ -6,7 +6,8 @@ int main(){
         for(int j=1;j<=n;j++){
             if(j%2==0){
                 if(i==j);
-                    printf("* ");
+                    printf(" ");
+                else printf("*");
             }
         }
         printf("\n");
