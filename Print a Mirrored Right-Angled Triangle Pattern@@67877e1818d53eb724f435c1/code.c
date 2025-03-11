@@ -1,16 +1,17 @@
 #include<stdio.h>
 int main(){
-    int n;
+    int n,space;
     scanf("%d",&n);
-    int a=n;
+    
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=a;j++){
+        for(int space =1;space<=n-1;space++){
             printf(" ");
-        }for(int k=1;k<=a;k++){
+        }
+        for(int j=1;j<=i;k++){
 
             printf("*");
         }
-        a--;
+        
         printf("\n");
     }
     return 0;
