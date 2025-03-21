@@ -19,7 +19,7 @@ int main(){
        
         for(int k=n;k>=1;k--){
             if(k%2!=0){
-            printf("*");
+                printf("*");
         }
             else printf("");
         }
