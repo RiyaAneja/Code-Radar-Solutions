@@ -18,7 +18,10 @@ int main(){
         }
        
         for(int k=n-1;k>=i;k--){
+            if(k%2!=0){
             printf("*");
+        }
+            else printf("");
         }
         printf("\n");
     }
