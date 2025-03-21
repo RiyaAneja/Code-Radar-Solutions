@@ -23,6 +23,12 @@ int main(){
         }
             else printf("");
         }
+        for(int k=n;k>i;k--){
+            if(k%2!=0){
+                printf("*");
+        }
+            else printf("");
+        }
         printf("\n");
     }
     return 0;
