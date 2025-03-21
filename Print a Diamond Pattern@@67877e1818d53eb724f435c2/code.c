@@ -17,15 +17,12 @@ int main(){
             printf(" ");
         }
        
-        for(int k=(n+2);k>=1;k--){
-            if(k%2==0){
-           
-                printf("*");
-            }
-            else printf("");
-       
+        for(int k=n-1; k>i;k++){
+            printf("*");
         }
-        
+        for(int a=n-2;a>i;a++){
+            printf("*");
+        }
         printf("\n");
     }
     return 0;
