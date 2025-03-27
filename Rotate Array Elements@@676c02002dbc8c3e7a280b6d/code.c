@@ -5,7 +5,7 @@ int rev(int arr[], int a, int b) {
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    return arr;
+    return arr[];
 }
     
 
