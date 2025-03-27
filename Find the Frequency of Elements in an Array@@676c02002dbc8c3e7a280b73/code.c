@@ -12,7 +12,7 @@ int freq(int arr[],int n){
         }
         
     }
-    return arr[i],count;
+    return ;
 }
 int main(){
     int n;
