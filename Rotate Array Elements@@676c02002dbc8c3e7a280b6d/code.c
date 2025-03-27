@@ -17,6 +17,7 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k=k%n;
 
     
     rev(arr,0,k-1);
