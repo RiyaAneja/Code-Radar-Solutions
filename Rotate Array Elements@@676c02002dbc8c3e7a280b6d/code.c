@@ -20,13 +20,15 @@ int main(){
     scanf("%d",&k);
     if(k>n){
         k=k%n;
-    }
-    else k=k;
+    //     rev(arr,0,k-1);
+    //     rev(arr,k,n-1);
+    //     rev(arr,0,n-1);
+    // } k=k;
 
     
+    rev(arr,0,n-1);
     rev(arr,0,k-1);
     rev(arr,k,n-1);
-    rev(arr,0,n-1);
     
     for(int j=0;j<n;j++){
         printf("%d\n",arr[j]);
