@@ -10,7 +10,9 @@ int main(){
     for(int j=0;j<n;j++){
         if(max<arr[j]){
             max=arr[j];
-            break;
+            if(max>arr[j]){
+                break;
+            }
         }
 
     }
