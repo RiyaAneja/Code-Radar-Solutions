@@ -12,7 +12,7 @@ int main(){
             a=arr[j];  
         }
         break;
-        else a=-1;
+        
          
     }
     printf("%d",a);
