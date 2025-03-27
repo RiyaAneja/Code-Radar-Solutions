@@ -17,7 +17,7 @@ int main(){
             smax=arr[j];
         }
     }
-    if(smax=-10000||smax=max){
+    if(smax=-1000||smax=max){
     printf("-1");
     }
     else printf("%d",smax);
