@@ -1,9 +1,17 @@
 #include<stdio.h>
 void palimdrome(int arr[],int n){
     for(int i=0;i<n;i++){
-        arr[i]=arr[n-i];
+        arr[i]=arr[n-i-1];
     }
     return;
+}
+int comp(int arr[],int aa[],int n){
+    for(int i=0;i<n;i++){
+        if(arr[i]!=arr[j]){
+            printf("YES");
+        }
+        else printf("NO");
+    }
 }
 int main(){
     int n;
@@ -13,11 +21,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    aa[n]=arr[n];
-    
-    if(arr[]==aa[]){
-        printf("YES");
-    }
-    else printf("NO");
+    comp(arr,aa,n);
     return 0;
 }
