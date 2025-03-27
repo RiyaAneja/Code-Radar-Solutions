@@ -1,16 +1,21 @@
-// #include<stdio.h>
-// int main(){
-//     int n;
-//     scanf("%d",&n);
-//     int arr[n];
-//     for(int i=0;i<n;i++){
-//         scanf("%d",&arr[i]);
-//     }
-//     int a=arr[0];
-//     for(int j=1;j<n;j++){
-//         if(a<arr[j]){
-//             a=arr[j];  
-//         }
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    int a=-1;
+    for(int j=0;j<n;j++){
+        if(a<arr[j]){
+            a=arr[j];  
+        }
+        break;
+    }
+    printf("%d",a);
+    return 0;
+}
         
         
          
@@ -40,25 +45,25 @@
 //     printf("%d", largest); // Print the largest element
 //     return 0;
 // }
-#include<stdio.h>
+// #include<stdio.h>
 
-int main() {
-    int n;
-    scanf("%d", &n);
+// int main() {
+//     int n;
+//     scanf("%d", &n);
 
-    int arr[n];
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+//     int arr[n];
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+    
+//     // Iterate to find the first peak element
+//     for(int i = 0; i < n; i++) {
+//         if ((i == 0 || arr[i] > arr[i - 1]) && (i == n - 1 || arr[i] > arr[i + 1])) {
+//             // Check if the element is greater than its neighbors
+//             printf("%d", arr[i]); // Print the peak element
+//             break; // Exit after finding the first peak
+//         }
+//     }
 
-    // Iterate to find the first peak element
-    for(int i = 0; i < n; i++) {
-        if ((i == 0 || arr[i] > arr[i - 1]) && (i == n - 1 || arr[i] > arr[i + 1])) {
-            // Check if the element is greater than its neighbors
-            printf("%d", arr[i]); // Print the peak element
-            break; // Exit after finding the first peak
-        }
-    }
-
-    return 0;
-}
+//     return 0;
+// }
