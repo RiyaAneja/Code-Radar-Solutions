@@ -15,7 +15,7 @@ int main(){
     }
     aa[n]=arr[n];
     
-    if(arr==aa){
+    if(arr[]==aa[]){
         printf("YES");
     }
     else printf("NO");
