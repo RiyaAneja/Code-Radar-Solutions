@@ -12,9 +12,10 @@ int main(){
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==k){
                 count+=1;
-            }    
+            }  
+            printf("%d",count);   
         } 
-        printf("%d",count);  
+         
     }
     
     return 0;
