@@ -17,9 +17,10 @@ int main(){
             smax=arr[j];
         }
     }
-      
-    
-    printf("%d",smax);
+      if(smax=-10000||smax=max){
+        printf("-1");
+      }
+    else printf("%d",smax);
     return 0;
 }
 // #include<stdio.h>
