@@ -8,9 +8,9 @@ void palimdrome(int arr[],int n){
 int comp(int arr[],int aa[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]!=aa[i]){
-            printf("YES");
+            return 0;
         }
-        else printf("NO");
+        return 1;
     }
 }
 int main(){
@@ -21,6 +21,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    comp(arr,aa,n);
+    if(comp(arr,aa,n)){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
     return 0;
 }
