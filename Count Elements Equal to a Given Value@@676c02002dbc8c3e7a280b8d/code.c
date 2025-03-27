@@ -9,7 +9,7 @@ int main(){
     }
     int count=0;
     for(int i=0;i<n;i++){
-        for(int j=i+1;i<n;i++){
+        for(int j=i+1;i<n;j++){
             if(arr[i]+arr[j]==k){
                 count+=1;
             }    
