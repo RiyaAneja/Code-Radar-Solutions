@@ -9,8 +9,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if(n>1 && arr[1]==arr[0]){
-        printf("%d",a);
-        break;
+        printf("-1");
+        return 0;
     }
     int max=arr[0];
     for(int j=1;j<n;j++){
