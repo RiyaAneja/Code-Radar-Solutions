@@ -15,8 +15,8 @@ int main(){
     int k;
     scanf("%d",&k);
     k=k%n;
-    rev(0,k-1);
-    rev(k,n);
+    rev(arr,0,k-1);
+    rev(arr,k,n);
     for(int j=0;j<n;j++){
         printf("%d",arr[i]);
     }
