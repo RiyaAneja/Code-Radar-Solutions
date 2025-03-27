@@ -1,9 +1,10 @@
 #include<stdio.h>
 void rev(int arr[], int a, int b){
     for(int i=a,j=b;i<b;i++,j--){
-        int temp=arr[a];
-        arr[a]=arr[b];
-        arr[b]=temp;
+    
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
     }
     return;
 }
