@@ -11,10 +11,11 @@ int main(){
         if(a<arr[j]){
             a=arr[j];  
         }
-        break;
+        
         
          
     }
+    break;
     printf("%d",a);
     return 0;
 }
