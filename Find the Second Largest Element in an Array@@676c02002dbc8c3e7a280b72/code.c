@@ -13,10 +13,7 @@ int main(){
             smax=max;
             max=arr[j];
         }
-        else if(smax<arr[j]&&max!=arr[j]){
-            smax=arr[j];
-        }
-    }
+      
     
     printf("%d",smax);
     return 0;
