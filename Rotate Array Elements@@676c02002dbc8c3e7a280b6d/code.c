@@ -21,6 +21,7 @@ int main(){
     if(k>n){
         k=k%n;
     }
+    else k=k;
 
     
     rev(arr,0,k-1);
