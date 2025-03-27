@@ -18,7 +18,7 @@ int main(){
     rev(arr,0,k-1);
     rev(arr,k,n);
     for(int j=0;j<n;j++){
-        printf("%d",arr[i]);
+        printf("%d",arr[j]);
     }
     return 0;
 }
