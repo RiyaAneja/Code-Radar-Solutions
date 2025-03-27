@@ -13,6 +13,9 @@ int main(){
             smax=max;
             max=arr[j];
         }
+        else if(smax<arr[i]&&max!=arr[i]){
+            smax=arr[i];
+        }
     }
     
     printf("%d",smax);
