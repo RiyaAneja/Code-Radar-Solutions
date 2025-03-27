@@ -17,9 +17,9 @@ int main(){
     int k;
     scanf("%d",&k);
     k=k%2;
-    rev(0,k-1);
-    rev(k,n-1);
-    rev(0,n-1);
+    rev(arr,0,k-1);
+    rev(arr,k,n-1);
+    rev(arr,0,n-1);
     for(int j=0;j<n;j++){
         printf("%d ",arr[j]);
     }
