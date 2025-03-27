@@ -10,7 +10,11 @@ int main(){
     }
     int max=arr[0];
     for(int j=0;j<n;j++){
-        if(max<arr[j]&& max!=arr[j]){
+        if(max==arr[i]){
+            printf("%d",&a);
+            break;
+        }
+        else if(max<arr[j]&& max!=arr[j]){
             max=arr[j];
             if(max>arr[j+1]){
                 
