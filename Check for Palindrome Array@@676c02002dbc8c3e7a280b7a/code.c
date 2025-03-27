@@ -10,12 +10,10 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     int aa[n];
-    for(int k=0;k<n;k++){
-        aa[k]=arr[i];
-    }
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    aa[n]=arr[n];
     int rev=palimdrome(arr,n);
     if(rev==aa){
         printf("YES");
