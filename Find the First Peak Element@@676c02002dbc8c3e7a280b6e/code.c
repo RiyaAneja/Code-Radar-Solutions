@@ -13,6 +13,7 @@ int main(){
             
            
         }
+        break;
          
     }
     printf("%d",a);
