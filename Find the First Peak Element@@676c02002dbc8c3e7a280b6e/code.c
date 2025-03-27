@@ -14,7 +14,7 @@ int main(){
                 break;
             }
         }
-        if(max==arr[j]){
+        else if(max==arr[j]){
             printf("%d",-1);
         }
 
