@@ -14,7 +14,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     aa[n]=arr[n];
-    int rev=palimdrome(arr,n);
+    int rev[]=palimdrome(arr,n);
     if(rev==aa){
         printf("YES");
     }
