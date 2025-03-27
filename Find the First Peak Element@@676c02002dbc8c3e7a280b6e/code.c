@@ -17,7 +17,10 @@ int main(){
                 break;
             }
         }
-        else printf("%d",a);
+       else {
+            printf("%d",a);
+            break;
+       }
         
     }
     printf("%d",max);
