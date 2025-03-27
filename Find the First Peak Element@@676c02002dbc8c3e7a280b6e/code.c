@@ -9,11 +9,10 @@ int main(){
     int a=arr[0];
     for(int j=1;j<n;j++){
         if(a<arr[j]){
-            a=arr[j];
-            
-           
+            a=arr[j];  
         }
         break;
+        else a=-1;
          
     }
     printf("%d",a);
