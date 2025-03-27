@@ -10,6 +10,7 @@ int main(){
             if(arr[i]+arr[j]==k){
                 count+=1;
             }
+            return count;
         }
     }
     printf("%d",count);
