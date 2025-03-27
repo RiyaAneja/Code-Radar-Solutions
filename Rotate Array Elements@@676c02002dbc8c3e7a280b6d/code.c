@@ -20,6 +20,7 @@ int main(){
     scanf("%d",&k);
     if(k>n){
         k=k%n;
+    }
     //     rev(arr,0,k-1);
     //     rev(arr,k,n-1);
     //     rev(arr,0,n-1);
