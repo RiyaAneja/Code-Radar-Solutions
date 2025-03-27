@@ -21,6 +21,7 @@ int main(){
     
     rev(arr,0,k-1);
     rev(arr,k,n-1);
+    rev(arr,0,n-1);
     
     for(int j=0;j<n;j++){
         printf("%d\n",arr[j]);
