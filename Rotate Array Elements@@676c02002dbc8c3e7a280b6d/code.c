@@ -1,8 +1,10 @@
 #include<stdio.h>
 void rev(int arr[], int a, int b){
-    int temp=arr[a];
-    arr[a]=arr[b];
-    arr[b]=temp;
+    for(int i=a,j=b;i<b;i++,j--){
+        int temp=arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+    }
     return;
 }
 int main(){
