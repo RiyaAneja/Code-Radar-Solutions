@@ -36,7 +36,7 @@ int main() {
         if (arr[j] > max) {
             smax = max; // Update second max before max changes
             max = arr[j]; // Update max
-        } else if (arr[j] > smax && arr[j] != max) {
+        } else if (arr[j-1] > smax && arr[j] != max) {
             smax = arr[j]; // Update second max only if the current element is not equal to max
         }
     }
