@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
     int n;
+    int a=-1
     
     scanf("%d\n",&n);
     int arr[n];
@@ -16,6 +17,7 @@ int main(){
                 break;
             }
         }
+        else printf("%d",a);
         
     }
     printf("%d",max);
