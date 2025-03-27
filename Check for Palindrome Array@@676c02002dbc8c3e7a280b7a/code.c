@@ -1,9 +1,9 @@
 #include<stdio.h>
-int palimdrome(int arr[],int n){
+void palimdrome(int arr[],int n){
     for(int i=0;i<n;i++){
         arr[i]=arr[n-i];
     }
-    return arr;
+    return;
 }
 int main(){
     int n;
