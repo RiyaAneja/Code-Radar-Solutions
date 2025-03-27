@@ -1,11 +1,11 @@
 #include<stdio.h>
-int rev(int arr[], int a, int b) {
+void rev(int arr[], int a, int b) {
     for(int i=a,j=b;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    return arr[];
+    return;
 }
     
 
