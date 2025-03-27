@@ -18,7 +18,7 @@ int main(){
             }
         }
         printf("%d",max);
-       else {
+        else {
             printf("%d",a);
             break;
        }
