@@ -13,6 +13,7 @@ int main(){
             smax=max;
             max=arr[j];
         }
+    }
       
     
     printf("%d",smax);
