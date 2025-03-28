@@ -22,7 +22,7 @@ int main() {
     }
 
     if (!found) {
-        printf("No pairs found that sum to %d\n", t); // Inform if no pairs are found
+        printf("%d", t); // Inform if no pairs are found
     }
 
     return 0;
