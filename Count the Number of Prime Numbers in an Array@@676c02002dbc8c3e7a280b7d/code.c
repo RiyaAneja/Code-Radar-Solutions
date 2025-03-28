@@ -75,7 +75,7 @@ int main() {
         }
     }
 
-    printf("Total number of prime numbers: %d\n", primeCount);
+    printf("%d", primeCount);
 
     return 0;
 }
