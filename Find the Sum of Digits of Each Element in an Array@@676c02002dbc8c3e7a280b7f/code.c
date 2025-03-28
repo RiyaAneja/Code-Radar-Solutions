@@ -13,7 +13,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        int sum=sum(arr[i],n);
+        int sum1=sum(arr[i],n);
     }
     printf("%d",&sum);
     return 0;
