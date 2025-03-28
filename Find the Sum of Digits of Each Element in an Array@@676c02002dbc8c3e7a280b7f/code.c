@@ -1,7 +1,8 @@
 #include<stdio.h>
 void sum(int arr[],int n){
     for(int i=0;i<n;i++){
-        while(int a>0){
+        int a;
+        while(a>0){
             int a=arr[i]%10;
             arr[i]=arr[i]/10;
         }
