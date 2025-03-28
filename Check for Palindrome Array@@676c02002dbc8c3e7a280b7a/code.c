@@ -21,9 +21,10 @@ int main() {
         }
     }
 
-    if (!found) {
-        printf("%d", t); // Inform if no pairs are found
+    if (found==1) {
+        printf("YES"); // Inform if no pairs are found
     }
+    else printf("NO");
 
     return 0;
 }
