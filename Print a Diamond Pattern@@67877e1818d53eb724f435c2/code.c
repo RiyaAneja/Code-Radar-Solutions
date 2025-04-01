@@ -40,9 +40,9 @@ int main(){
         for(int k=1;k<=(2*r-1);k++){
             printf("*");
         }
-        for(int r=n-1;r>=1;r--){
-            printf("*");
-        }
+        // for(int r=n-1;r>=1;r--){
+        //     printf("*");
+        // }
         printf("\n");
     }
     return 0;
