@@ -21,7 +21,7 @@ int main(){
     for(int i=n;i>=1;i--){
         for(int j=1;j<=i;j++){
             int d=j+64;
-            printf("%c",(char)d);
+            printf("%c ",(char)d);
         }
         printf("\n");
     }
