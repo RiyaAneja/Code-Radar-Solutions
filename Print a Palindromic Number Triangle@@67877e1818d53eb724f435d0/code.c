@@ -10,7 +10,7 @@ int main(){
             if(k<=i){
                 printf("%d",k);
             }
-            else printf("%d",2*k-i);
+            else printf("%d",k-i);
         }
         printf("\n");
     }
@@ -22,7 +22,7 @@ int main(){
             if(k<=i){
                 printf("%d",k);
             }
-            else printf("%d",2*k-i);
+            else printf("%d",k-i);
         }
         printf("\n");
     }
