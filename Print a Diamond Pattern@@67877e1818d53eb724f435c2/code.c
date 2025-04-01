@@ -33,11 +33,11 @@
 int main(){
     int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=n-i;j++){
+    for(int r=1;r<=n;r++){
+        for(int j=1;j<=n-r;j++){
             printf(" ");
         }
-        for(int k=1;k<=(2*i)-1;k++){
+        for(int k=1;k<=(2*r-1);k++){
             printf("*");
         }
         for(int r=n-1;r>=1;r--){
