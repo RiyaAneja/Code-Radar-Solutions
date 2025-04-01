@@ -10,7 +10,7 @@ int main(){
             if(k<=i){
                 printf("%d",k);
             }
-            else printf("%d",k-i);
+            else printf("%d",i-1);
         }
         printf("\n");
     }
