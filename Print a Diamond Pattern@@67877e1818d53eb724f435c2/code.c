@@ -40,10 +40,19 @@ int main(){
         for(int k=1;k<=(2*r-1);k++){
             printf("*");
         }
-        // for(int r=n-1;r>=1;r--){
-        //     printf("*");
-        // }
+        
         printf("\n");
+    }
+    for(int a=n-1;a>=1;a--){
+        for(int j=1;j<=n-r;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=(2*r-1);k++){
+            printf("*");
+        }
+        
+        printf("\n");
+
     }
     return 0;
 }
