@@ -10,7 +10,7 @@
 // }
 #include<stdio.h>
 int main(){
-    int n;
+    int n,d;
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         d=n*i;
