@@ -14,7 +14,7 @@ int main(){
             sum=sum+digit%10;
             digit=digit/10;            
         }
-        printf("%d",sum);        
+        printf("%d ",sum);        
     }
     
     return 0;
