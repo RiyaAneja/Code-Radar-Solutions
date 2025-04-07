@@ -34,7 +34,7 @@ int main() {
             sum = sum + digit % 10;
             digit = digit / 10;            
         }
-        printf("%d\n", sum); // Print the sum of digits for the current number
+        printf("%d ", sum); // Print the sum of digits for the current number
     }
     return 0;
 }
