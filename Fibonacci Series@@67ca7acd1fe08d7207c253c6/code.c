@@ -1,5 +1,5 @@
 #include<stdio.h>
-int fibo(n){
+int fibo(int n){
     int a=0;
     int b=1;
     int sum=a+b;
