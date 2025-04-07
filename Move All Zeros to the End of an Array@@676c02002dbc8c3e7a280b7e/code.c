@@ -1,5 +1,5 @@
 #include<stdio.h>
-int move0toend(int arr[],n){
+int move0toend(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]==0){
             arr[n-i]=arr[i];
