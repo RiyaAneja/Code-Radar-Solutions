@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 // Function to find the maximum of two integers
-int max(int a, int b) {
+void max(int a, int b) {
     if(a>b) printf("%d",a);
     else printf("%d",b);
-    return max;
+    return;
 }
 
 // Function to calculate the maximum product of two elements in an array
