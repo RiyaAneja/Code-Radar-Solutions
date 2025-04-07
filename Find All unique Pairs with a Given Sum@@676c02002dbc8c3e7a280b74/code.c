@@ -19,16 +19,15 @@
 
 int main() {
     int n, x;
-    printf("Enter the size of the array and target sum: ");
     scanf("%d %d", &n, &x);
-
     int arr[n];
-    printf("Enter %d elements of the array: ", n);
+
+    // Read the array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    printf("Pairs with sum %d:\n", x);
+    // Find and print pairs that sum to x
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == x) {
