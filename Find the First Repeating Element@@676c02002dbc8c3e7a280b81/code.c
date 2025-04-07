@@ -5,7 +5,7 @@ int firstrepeating(int arr[],int n){
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 found=1;
-                printf("%d",&arr[i]);
+                printf("%d",arr[i]);
                 break;
             }
         }
