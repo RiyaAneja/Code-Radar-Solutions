@@ -29,7 +29,7 @@ int main() {
     }
 
     int max_product = producto2(arr, n);
-    printf("The maximum product of two elements is: %d\n", max_product);
+    printf("%d", max_product);
 
     return 0;
 }
