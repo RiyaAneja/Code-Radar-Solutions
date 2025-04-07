@@ -2,7 +2,9 @@
 
 // Function to find the maximum of two integers
 int max(int a, int b) {
-    return (a > b) ? a : b;
+    if(a>b) printf("%d",a);
+    else printf("%d",b);
+    return max;
 }
 
 // Function to calculate the maximum product of two elements in an array
