@@ -20,15 +20,15 @@ int findMaxFrequencyElement(int arr[], int n) {
 
 int main() {
     int n;
-    printf("Enter the size of the array: ");
+    // printf("Enter the size of the array: ");
     scanf("%d", &n);
     int arr[n];
-    printf("Enter the elements of the array: ");
+    // printf("Enter the elements of the array: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     
     int result = findMaxFrequencyElement(arr, n);
-    printf("The element with the highest frequency (or the smallest element in case of tie) is: %d\n", result);
+    printf("%d\n", result);
     return 0;
 }
