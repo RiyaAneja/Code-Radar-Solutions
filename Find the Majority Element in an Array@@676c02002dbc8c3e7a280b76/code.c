@@ -56,20 +56,19 @@ int majority(int arr[], int n) {
 
 int main() {
     int n;
-    printf("Enter the size of the array: ");
+ 
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter the elements of the array: ");
+ 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int maj = majority(arr, n);
     if (maj != -1) {
-        printf("The majority element is: %d\n", maj);
-    } else {
-        printf("No majority element found.\n");
+        printf("%d", maj);
+    } 
     }
 
     return 0;
