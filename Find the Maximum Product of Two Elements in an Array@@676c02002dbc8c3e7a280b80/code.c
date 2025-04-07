@@ -1,8 +1,8 @@
 #include<stdio.h>
 int max(int n){
     int maxi=-1;
-    if(maxi<product){
-        maxi=product;
+    if(maxi<n){
+        maxi=n;
     }
     return maxi;
 }
