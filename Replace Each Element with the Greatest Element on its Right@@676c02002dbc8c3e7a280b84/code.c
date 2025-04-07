@@ -1,5 +1,5 @@
 #include<stdio.h>
-int greatestelement(arr[],n){
+int greatestelement(int arr[],int n){
     for(int i=0;i<n;i++){
         // int max=arr[i];
         for(int j=0;j<n;j++){
