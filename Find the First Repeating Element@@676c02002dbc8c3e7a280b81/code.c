@@ -27,7 +27,7 @@ int main() {
     if (frep == -1) {
         // printf("No repeating elements found.\n");
     } else {
-        printf(" %d\n", frep);
+        printf("%d\n", frep);
     }
 
     return 0;
