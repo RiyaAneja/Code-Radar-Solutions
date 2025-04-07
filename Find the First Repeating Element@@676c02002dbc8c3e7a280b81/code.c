@@ -1,27 +1,34 @@
-#include<stdio.h>
-int firstrepeating(int arr[],int n){
-    int found=0;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(arr[i]==arr[j]){
-                found=1;
-                printf("%d",arr[i]);
-                break;
+#include <stdio.h>
+
+// Function to find the first repeating element in the array
+int firstrepeating(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                return arr[i]; // Return the first repeating element
             }
         }
     }
-    if(found==0){
-        printf("-1");
-    }
+    return -1; // Return -1 if no repeating element is found
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    // printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    // printf("Enter the elements of the array:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int frep=firstrepeating(arr,n);
-    printf("%d",frep);
+
+    int frep = firstrepeating(arr, n);
+    if (frep == -1) {
+        // printf("No repeating elements found.\n");
+    } else {
+        printf(" %d\n", frep);
+    }
+
     return 0;
 }
