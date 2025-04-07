@@ -1,47 +1,17 @@
-// #include<stdio.h> 
-// int main(){ 
-//     int n,t; 
-//     scanf("%d",&n); 
-    
-//     int arr[n]; 
-//     for(int b=0;b<n;b++){ 
-//         scanf("%d",&arr[b]); 
-//     } 
-//     scanf("%d",&t); 
-    
-//     for(int i=0;i<n;i++){ 
-//         for(int j=i+1;j<n;j++){ 
-//             if(arr[i]+arr[j]==t){
-//                 printf("%d %d\n",i+1,j+1);
-                 
-//             }
-//         }
-//     }
-//     return 0;
-// }
-#include <stdio.h>
-
-int main() {
-    int n, t; 
-    scanf("%d", &n); // Read the number of elements
-
-    int arr[n]; 
-    for (int b = 0; b < n; b++) { 
-        scanf("%d", &arr[b]); // Read the elements of the array
-    } 
-    
-    scanf("%d", &t); // Read the target sum
-
-    int found = 0; // Flag to check if any pair is found
-    for (int i = 0; i < n; i++) { 
-        for (int j = i + 1; j < n; j++) { 
-            if (arr[i] + arr[j] == t) {
-                printf("%d %d\n", i + 1, j + 1); // Print 1-based indices
-                found = 1; // Set the flag to indicate a pair was found
+#include<stdio.h>
+int main(){
+    int n,x;
+    scanf("%d %d",&n,&x);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==x){
+                printf("%d %d\n",arr[i],arr[j]);
             }
         }
     }
-
-   
     return 0;
 }
