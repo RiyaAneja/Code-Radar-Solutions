@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to find the maximum of two integers
-void max(int a, int b) {
+int max(int a, int b) {
     if(a>b) printf("%d",a);
     else printf("%d",b);
     return;
