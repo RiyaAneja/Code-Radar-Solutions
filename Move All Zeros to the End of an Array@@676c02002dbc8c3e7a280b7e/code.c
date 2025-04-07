@@ -6,7 +6,7 @@ int move0toend(int arr[],int n){
             arr[i]=arr[i]+1;
         }
     }
-    return arr[];
+    return arr[n];
 
 }
 int main(){
