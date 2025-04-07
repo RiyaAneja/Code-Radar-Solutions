@@ -1,24 +1,38 @@
-#include<stdio.h>
-int move0toend(int arr[],int n){
-    for(int i=0;i<n;i++){
-        if(arr[i]==0){
-            arr[n-i]=arr[i];
-            arr[i]=arr[i]+1;
+#include <stdio.h>
+
+void move0toend(int arr[], int n) {
+    int index = 0; // Pointer for non-zero elements
+
+    // Traverse the array and move non-zero elements to the front
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
+            arr[index++] = arr[i];
         }
     }
-    return arr[n];
 
+    // Fill the rest of the array with zeros
+    while (index < n) {
+        arr[index++] = 0;
+    }
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    // Input the array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int brr[n]=move0toend(arr(),n);
-    for(int j=0;j<n;j++){
-        printf("%d",brr[j]);
+
+    // Call the function to move zeros to the end
+    move0toend(arr, n);
+
+    // Output the modified array
+    for (int j = 0; j < n; j++) {
+        printf("%d ", arr[j]);
     }
+
     return 0;
 }
