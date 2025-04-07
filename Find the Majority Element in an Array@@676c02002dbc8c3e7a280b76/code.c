@@ -69,7 +69,7 @@ int main() {
     if (maj != -1) {
         printf("%d", maj);
     } 
-    }
+    
 
     return 0;
 }
