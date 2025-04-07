@@ -11,7 +11,7 @@ int greatestelement(int arr[],int n){
             arr[n]=-1;
         }    
     }
-    return arr[];
+    return arr;
 }
 int main(){
     int n;
