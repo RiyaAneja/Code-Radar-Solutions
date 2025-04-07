@@ -16,7 +16,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int maj=majority(arr[],n);
+    int maj=majority(arr[n],n);
     if(maj>(n/2)){
         printf("%d",maj);
     }
