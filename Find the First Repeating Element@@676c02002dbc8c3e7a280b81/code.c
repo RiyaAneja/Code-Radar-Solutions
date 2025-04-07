@@ -1,5 +1,5 @@
 #include<stdio.h>
-void firstrepeating(int arr[],int n){
+int firstrepeating(int arr[],int n){
     int found=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
