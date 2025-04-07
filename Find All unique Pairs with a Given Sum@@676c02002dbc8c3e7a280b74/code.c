@@ -11,6 +11,7 @@ int main(){
             if(arr[i]+arr[j]==x){
                 printf("%d %d\n",arr[i],arr[j]);
             }
+            else printf("");
             // printf("%d %d\n",arr[i],arr[j]);
         }
     }
