@@ -16,7 +16,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int brr[n]=move0toend(arr[],n);
+    int brr[n]=move0toend(arr(),n);
     for(int j=0;j<n;j++){
         printf("%d",brr[j]);
     }
