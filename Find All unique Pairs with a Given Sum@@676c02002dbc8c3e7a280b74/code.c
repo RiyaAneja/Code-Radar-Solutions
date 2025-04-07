@@ -1,5 +1,7 @@
 #include<stdio.h>
-int calculate(int arr[n],int n){
+
+// Function to calculate and print pairs
+void calculate(int arr[], int n, int x) {
     for(int i = 0; i < n; i++) {
         for(int j = i + 1; j < n; j++) {
             if(arr[i] + arr[j] == x) {
@@ -7,16 +9,15 @@ int calculate(int arr[n],int n){
             }
         }
     }
-    return arr[i],arr[j];    
 }
-int main(){
+
+int main() {
     int n, x;
-    scanf("%d %d", &n, &x);
+    scanf("%d %d", &n, &x); // Input size and target sum
     int arr[n];
     for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[i]); // Input array elements
     }
-    int pairs=calculate(arr,n);
-    printf("%d %d\n",pairs);
+    calculate(arr, n, x); // Call the function
     return 0;
 }
