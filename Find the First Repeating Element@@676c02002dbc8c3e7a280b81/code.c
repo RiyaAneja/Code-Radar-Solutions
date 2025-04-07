@@ -25,7 +25,7 @@ int main() {
 
     int frep = firstrepeating(arr, n);
     if (frep == -1) {
-        // printf("No repeating elements found.\n");
+        printf("-1");
     } else {
         printf("%d\n", frep);
     }
