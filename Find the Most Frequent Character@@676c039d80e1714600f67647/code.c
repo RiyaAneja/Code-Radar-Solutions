@@ -26,7 +26,7 @@ int main() {
     }
 
     // Print the result
-    printf("The most frequent character is '%c' with a frequency of %d.\n", mostFrequentChar, maxFreq);
+    printf("'%c'", mostFrequentChar);
 
     return 0;
 }
