@@ -6,7 +6,7 @@ int main(){
     int size=strlen(ch);
     int count=1;
     for(int i=0;i<size;i++){
-        if(str[i]==" "){
+        if(ch[i]==" "){
             count+=1;
         }
         printf("%d",count);
