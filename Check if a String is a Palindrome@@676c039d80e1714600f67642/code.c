@@ -4,7 +4,7 @@ int main(){
     char ch[50];
     fgets(ch,sizeof(ch),stdin);
     char copy[50];
-    strcpy(char *copy,char *ch);
+    strcpy(copy, ch);
     int k=0;
     int size=strlen(ch);
     for(int i=0, j= size-1;i<j;i++,j--){
