@@ -10,7 +10,8 @@ void replaceChar(char str[], char oldChar, char newChar) {
 }
 
 int main() {
-    
+    char str[] = "hello world";
+    // printf("Original string: %s\n", str);
 
     replaceChar(str, 'o', 'a');
     printf("Modified string: %s\n", str);
