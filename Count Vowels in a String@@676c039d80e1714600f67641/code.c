@@ -9,8 +9,9 @@ int main(){
         size++;
         k++;
     }
-    int vowels=0;
+    
     for(int i=0;i<size;i++){
+        int vowels=0;
         if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'){
             vowels+=1;
         }        
