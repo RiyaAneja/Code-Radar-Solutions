@@ -25,6 +25,6 @@ int main() {
         return 1; 
     }
     replaceCharacter(str, toReplace, replacement);
-    printf("Modified string: %s\n", str);
+    printf("%s\n", str);
     return 0; 
 }
