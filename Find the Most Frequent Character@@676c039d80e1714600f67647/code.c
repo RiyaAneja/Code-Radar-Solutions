@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(){
-    int str[100];
+    char str[100];
     int freq[] = {0};
     fgets(str, 100, stdin);
     for( int i = 0 ; i != '\n';i++ ){
