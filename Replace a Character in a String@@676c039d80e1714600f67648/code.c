@@ -8,7 +8,8 @@ void replaceChar(char str[], char oldChar, char newChar) {
     }
 }
 int main() {
-    char str[] = "hello world";
+    char str[50];
+    fgets(ch,sizeof(ch),stdin);
     replaceChar(str, 'o', 'a');
     printf("%s\n", str);
     return 0;
