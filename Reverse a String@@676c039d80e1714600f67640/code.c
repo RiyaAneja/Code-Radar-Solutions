@@ -6,7 +6,7 @@ int main(){
 
     int size=0;
     int k=0;
-    while(ch[k]!='\o'){
+    while(ch[k] != '\0')
         size++;
         k++;
     }
