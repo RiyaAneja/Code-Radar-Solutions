@@ -2,7 +2,8 @@
 #include<string.h>
 int main(){
     char ch[50];
-    fgets(ch);
+    fgets(ch, sizeof(ch), stdin);
+
     int size=0;
     int k=0;
     while(ch[k]!='\o'){
