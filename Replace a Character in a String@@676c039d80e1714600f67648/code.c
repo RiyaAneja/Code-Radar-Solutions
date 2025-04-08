@@ -1,28 +1,20 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-int main() {
-    char str[100];
-    int freq[256] = {0}; // Frequency array for ASCII characters
-    char mostFrequentChar = 0;
-    int maxFreq = 0;
-
-    // Read the input string
-    fgets(str, sizeof(str), stdin);
-
-    // Count character frequencies
+void replaceChar(char str[], char oldChar, char newChar) {
     for (int i = 0; str[i] != '\0'; i++) {
-        freq[(unsigned char)str[i]]++;
-    }
-
-    // Find the most frequent character
-    for (int i = 0; i < 256; i++) {
-        if (freq[i] > maxFreq) {
-            maxFreq = freq[i];
-            mostFrequentChar = (char)i;
+        if (str[i] == oldChar) {
+            str[i] = newChar;
         }
     }
+}
 
-    // Print the result
-    printf("%c\n", mostFrequentChar);
+int main() {
+    char str[] = "hello world";
+    printf("Original string: %s\n", str);
+
+    replaceChar(str, 'o', 'a');
+    printf("Modified string: %s\n", str);
+
     return 0;
 }
