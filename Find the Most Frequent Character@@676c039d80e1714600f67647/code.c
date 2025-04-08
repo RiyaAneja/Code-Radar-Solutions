@@ -1,29 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(){
+char findMostFrequentChar(char *str) {
+    int freq[256] = {0}; // Array to store frequency of characters, assuming ASCII set
+    int maxFreq = 0;      // Variable to store the maximum frequency
+    char mostFrequentChar = '\0';
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        freq[(int)str[i]]++; // Increment frequency of the character
+        if (freq[(int)str[i]] > maxFreq) {
+            maxFreq = freq[(int)str[i]];
+            mostFrequentChar = str[i];
+        }
+    }
+
+    return mostFrequentChar;
+}
+
+int main() {
     char str[100];
-    int freq[] = {0};
-    fgets(str, 100, stdin);
-    for( int i = 0 ; i != '\n';i++ ){
-        int count = 1;
-        if(freq[i] != 1){
-            for(int j = i+1 ; j != '\n'; j++){
-                if(str[i] == str[j]){
-                    count++;
-                    freq[j] = 1;
-                }
-        }
-        }
-        freq[i] = count;
 
-    }
-    int max = freq[0];
-    for(int i = 1; i < sizeof(freq)/sizeof(freq[0]); i++){
-        if(freq[i] > max){
-            max = freq[i];
-        }
-    }
-    printf("%d",str[max]);
+    
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0'; // Remove trailing newline character
 
+    char result = findMostFrequentChar(str);
+    printf("%c\n", result);
+
+    return 0;
 }
