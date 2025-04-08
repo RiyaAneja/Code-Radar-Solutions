@@ -5,7 +5,7 @@ int main(){
     gets(ch);
     int size=0;
     int k=0;
-    while(ch[k]!='\o'){
+    while(ch[k]!='/o'){
         size++;
         k++;
     }
