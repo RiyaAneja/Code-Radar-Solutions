@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<size;i++){
         
         if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'){
-            vowels+=1;
+            vowels++;
         }    
         printf("%d",vowels);    
     }
