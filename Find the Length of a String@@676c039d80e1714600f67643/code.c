@@ -4,5 +4,5 @@ int main(){
     char ch[50];
     fgets(ch,sizeof(ch),stdin);
     int size=strlen(ch);
-    printf("%d",strlen);
+    printf("%d",size);
 }
