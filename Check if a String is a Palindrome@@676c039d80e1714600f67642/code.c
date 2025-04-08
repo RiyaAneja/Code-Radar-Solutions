@@ -14,9 +14,9 @@ int main(){
     }
     
      if (strcmp(copy, ch) == 0) {
-        printf("YES\n"); // The string is a palindrome
+        printf("Yes\n"); // The string is a palindrome
     } else {
-        printf("NO\n"); // The string is not a palindrome
+        printf("No\n"); // The string is not a palindrome
     }
     return 0;
 }
