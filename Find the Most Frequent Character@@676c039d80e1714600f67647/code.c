@@ -26,7 +26,7 @@ int main() {
     }
 
     // Print the result
-    printf("'%c'", mostFrequentChar);
+    printf("%c", mostFrequentChar);
 
     return 0;
 }
