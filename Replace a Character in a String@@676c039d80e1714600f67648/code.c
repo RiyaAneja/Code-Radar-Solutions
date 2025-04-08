@@ -1,16 +1,20 @@
 #include <stdio.h>
-#include <string.h>
-void replaceChar(char str[], char oldChar, char newChar) {
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] == oldChar) {
-            str[i] = newChar;
+void replaceCharacter(char *str, char toReplace, char replacement) {
+    while (*str) {
+        if (*str == toReplace) {
+            *str = replacement;
         }
+        str++;
     }
 }
 int main() {
-    char str[50];
-    fgets(ch,sizeof(ch),stdin);
-    replaceChar(str, 'o', 'a');
+    char str[100]; 
+    char toReplace, replacement;
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = 0;
+    scanf(" %c", &toReplace);
+    scanf(" %c", &replacement);
+    replaceCharacter(str, toReplace, replacement);
     printf("%s\n", str);
     return 0;
 }
