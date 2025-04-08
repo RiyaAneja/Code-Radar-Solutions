@@ -8,7 +8,7 @@ int main() {
     char mostFrequentChar;
 
     // Read the input string
-    printf("Enter a string: ");
+    // printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = 0; // Remove newline character if present
 
