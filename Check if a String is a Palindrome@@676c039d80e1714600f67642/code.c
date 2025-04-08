@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char ch[50];
-    gets(ch,sizeof(ch),stdin);
+    fgets(ch,sizeof(ch),stdin);
     char copy[50];
     strcpy(char *copy,char *ch);
     int k=0;
