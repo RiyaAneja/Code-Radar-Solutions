@@ -10,8 +10,8 @@ int main(){
         if(ch[i]==' '){
             count+=1;
         }
-        // printf("%d",count);
+        printf("%d",count);
     }
-    printf("%d",count);
+    // printf("%d",count);
     return 0;
 }
