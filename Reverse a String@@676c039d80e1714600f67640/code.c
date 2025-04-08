@@ -14,6 +14,7 @@ int main(){
         char temp=ch[i];
         ch[i]=ch[j];
         ch[j]=temp;
-    }
+    
     puts(ch);
+    return 0;
 }
