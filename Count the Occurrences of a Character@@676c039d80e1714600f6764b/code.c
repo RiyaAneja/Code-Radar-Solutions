@@ -7,14 +7,12 @@ int main(){
     scanf("%c",&ch);
     int count=0;
     for(int i=0;i<strlen(str);i++){
-        // int count=0;
-        for(int j=0;j<strlen(str);j++){
-            if(str[j]==ch){
-                count++;
-            }
+        if(str[j]==ch){
+            count++;
         }
-         
     }
+         
+    
     printf("%d",count);
     return 0;
 }
