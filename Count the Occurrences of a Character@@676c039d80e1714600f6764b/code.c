@@ -7,7 +7,7 @@ int main(){
     scanf("%c",&ch);
     int count=0;
     for(int i=0;i<strlen(str);i++){
-        if(str[j]==ch){
+        if(str[i]==ch){
             count++;
         }
     }
