@@ -18,6 +18,6 @@ int main() {
         start = end + 1;
         end = start;
     }
-    printf("Reversed String: %s\n", str);
+    printf("%s\n", str);
     return 0;
 }
