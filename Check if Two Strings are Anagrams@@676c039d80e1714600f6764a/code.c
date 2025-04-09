@@ -5,7 +5,7 @@ int main(){
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
     for(int i=0;i<strlen(str1);i++){
-        for(int j=i+1;j<strlen(str1)){
+        for(int j=i+1;j<strlen(str1);j++){
             if(str1[i]>str1[j]){
                 char temp=str1[i];
                 str1[i]=str1[j];
@@ -14,7 +14,7 @@ int main(){
         }
     }
     for(int i=0;i<strlen(str2);i++){
-        for(int j=i+1;j<strlen(str2)){
+        for(int j=i+1;j<strlen(str2);j++){
                 if(str2[i]>str2[j]){
                     char temp=str2[i];
                     str2[i]=str2[j];
