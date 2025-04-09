@@ -40,7 +40,8 @@ int main(){
         if(str[i]==ch1){
             str[i]=ch2;
         }
+         puts(str);
     }
-    puts(str);
+   
     return 0;
 }
