@@ -22,7 +22,7 @@ int main(){
                 }
             }
     }
-    if(strcmp(str1,str2)==0){
+    if(strcmp(str1,str2)=0){
         printf("Yes");
     }
     else printf("No");
