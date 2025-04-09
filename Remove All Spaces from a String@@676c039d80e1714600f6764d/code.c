@@ -9,7 +9,7 @@ int main(){
             str2[j]=str1[i];
             j++;
         }
-        i++;
+       
     }
     str2[j]='\0';
     printf("%s",str2);
