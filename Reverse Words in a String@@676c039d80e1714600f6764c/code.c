@@ -6,7 +6,7 @@ int main() {
     int i, start = 0, end = 0;
 
     // Prompt for input
-    printf("Enter a string: ");
+    // printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = '\0'; // Remove trailing newline
 
