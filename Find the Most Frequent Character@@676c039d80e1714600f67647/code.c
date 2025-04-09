@@ -33,7 +33,7 @@ int main(){
     int maxcount;
     for(int i=0;i<length;i++){
         int count=0;
-        for(int j=i+1;j<length;j++){
+        for(int j=0;j<length;j++){
             if(str[i]==str[j]){
                 count++;
             }
