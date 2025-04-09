@@ -34,14 +34,14 @@ int main(){
     char str[100];
     fgets(str,sizeof(str),stdin);
     char ch1,ch2;
-    scanf("%d",&ch1);
-    scanf("%d",&ch2);
+    scanf("%c",&ch1);
+    scanf("%c",&ch2);
     for(int i=0;i<strlen(str);i++){
         if(str[i]==ch1){
             str[i]=ch2;
         }
-         puts(str);
     }
+    puts(str);
    
     return 0;
 }
