@@ -29,7 +29,7 @@ int main(){
     int length=strlen(str);
     char str1[50];
     strcpy(str1,str);
-    for(int i=0,j=len-1;i<j;i++,j--){
+    for(int i=0,j=length-1;i<j;i++,j--){
         char temp=str[i];
         str[i]=str[j];
         str[j]=temp;
