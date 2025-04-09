@@ -20,6 +20,6 @@ int main(){
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
     strcat(str1,str2);
-    puts(Str1);
+    puts(str1);
     return 0;
 }
