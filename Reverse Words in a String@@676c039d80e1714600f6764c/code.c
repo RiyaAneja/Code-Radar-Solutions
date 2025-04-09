@@ -2,10 +2,15 @@
 #include <string.h>
 
 int main() {
-    char str[] = "Hello World";
+    char str[100];
     int i, start = 0, end = 0;
 
-    
+    // Prompt for input
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0'; // Remove trailing newline
+
+   
 
     for (i = 0; str[i] != '\0'; i++) {
         if (str[i] == ' ' || str[i + 1] == '\0') {
