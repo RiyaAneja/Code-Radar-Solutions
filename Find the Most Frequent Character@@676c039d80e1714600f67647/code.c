@@ -43,7 +43,8 @@ int main(){
             max=str[i];
             
         }
-        printf("%c",max);
+        
     }
+    printf("%c",max);
     return 0;    
 }
