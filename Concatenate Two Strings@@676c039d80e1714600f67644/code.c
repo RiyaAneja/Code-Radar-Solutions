@@ -19,7 +19,11 @@ int main(){
     char str2[50];
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
-    strcat(str1,str2);
+    int length=strlen(str2);
+    int len=strlen(str1);
+    for(int i=0;i<length;i++){
+        str1[len+i]=str2[i];
+    }
     puts(str1);
     return 0;
 }
