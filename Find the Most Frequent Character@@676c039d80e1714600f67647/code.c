@@ -6,7 +6,6 @@ int main(){
     int length = strlen(str);
     char max;
     strcpy(sttr, str);
-
     for(int i = 0; i < length; i++){
         for(int j = i + 1; j < length; j++){
             if(sttr[i] > sttr[j]){
@@ -16,7 +15,6 @@ int main(){
             }
         }
     }
-
     int maxcount = 0;
     for(int i = 0; i < length; i++){
         int count = 0;
@@ -30,7 +28,6 @@ int main(){
             max = str[i];
         }
     }
-
     printf("%c", max);
     return 0;
 }
