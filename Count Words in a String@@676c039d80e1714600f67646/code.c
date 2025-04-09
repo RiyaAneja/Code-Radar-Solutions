@@ -25,7 +25,7 @@ int main(){
     char str[50];
     fgets(str,sizeof(str),stdin);
     int length=strlen(str);
-    itn count=0;
+    int count=0;
     for(int i=0;i<len;i++){
         if(str[i]!=' '&&(i==0||str[i-1]==' ')){
             count++;
