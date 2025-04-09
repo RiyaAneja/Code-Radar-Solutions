@@ -54,7 +54,7 @@ int main(){
             
         }
         else{
-            max=sttr[i];
+            max=sttr[j];
             
                     }
         
