@@ -22,8 +22,8 @@ int main(){
     int length=strlen(str2);
     int len=strlen(str1);
     for(int i=0;i<length;i++){
-        str1[len-1+i]=str2[i];
+        str1[len+i]=str2[i];
     }
-    puts(str1);
+    printf("%s",str1);
     return 0;
 }
