@@ -21,7 +21,7 @@
 #include<string.h>
 int main(){
     char str[50];
-    gets(str,sizeof(str),stdin);
+    fgets(str,sizeof(str),stdin);
     int length=strlen(str);
     int count=0;
     for(int i=0;i<length;i++){
