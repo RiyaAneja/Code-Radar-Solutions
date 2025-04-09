@@ -31,7 +31,7 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int len=strlen(str);
     for(int i=0,j=len-1;i<j;i++,j--){
-        str[i]=str[j-i];
+        str[i]=str[j];
     }
     puts(str);
     return 0;
