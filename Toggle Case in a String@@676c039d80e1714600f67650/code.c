@@ -4,7 +4,7 @@ int main(){
     char str[100];
     fgets(str,sizeof(str),stdin);
     for(int i=0;i<strlen(str);i++){
-        if(str[i]>='A'||str[i]<='Z'){
+        if(str[i]>='A'&& str[i]<='Z'){
             str[i]=str[i]+32;
         }
         else str[i]=str[i]-32;
