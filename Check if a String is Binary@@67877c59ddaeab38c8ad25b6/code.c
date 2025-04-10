@@ -5,7 +5,7 @@ int main(){
     int bin=0;
     fgets(str,sizeof(str),stdin);
     for(int i=0;i<strlen(str);i++){
-        if(str[i]=='0'|| str[i]=='1'){
+        if(str[i]=='0'&& str[i]=='1'){
             bin=1;
         }
     }
