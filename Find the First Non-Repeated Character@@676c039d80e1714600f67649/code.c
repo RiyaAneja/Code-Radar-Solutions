@@ -10,8 +10,7 @@ int main() {
         if (count == 1) {
             printf("%c\n", str[i]);
             return 0; 
-        }
-        
+        }   
     }
     printf("-"); 
     return 0;
