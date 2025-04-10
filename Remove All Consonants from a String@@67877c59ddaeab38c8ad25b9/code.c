@@ -6,7 +6,7 @@ int main(){
     str[strcspn(str, "\n")] = '\0';
     int len= strlen(str);
     for(int i=0;i<len;i++){
-        if(str[i]>='A'&&str[i]<='Z'){
+        if(str[i]>='A'&& str[i]<='Z'){
             str[i]=' ';
         }
     }
