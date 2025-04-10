@@ -9,9 +9,10 @@ int main() {
         }
         if (count == 1) {
             printf("%c\n", str[i]);
-            return 0; 
+            // return 0; 
         }
+        else printf("-");
     }
-    printf("-"); 
+    // printf("-"); 
     return 0;
 }
