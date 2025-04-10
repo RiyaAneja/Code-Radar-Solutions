@@ -8,6 +8,7 @@ int main(){
         for(int j=i+1;j<strlen(str);j++){
             if(str[i]!=str[j]){
                 count++;
+                break;
             }
         }
         if(count!=0){
