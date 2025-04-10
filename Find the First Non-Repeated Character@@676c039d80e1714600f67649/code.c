@@ -1,20 +1,25 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+int main() {
     char str[100];
-    fgets(str,sizeof(str),stdin);
-    for(int i=0;i<strlen(str);i++){
-        int count=0;
-        for(int j=i+1;j<strlen(str);j++){
-            if(str[i]!=str[j]){
+    int found = 0;
+    fgets(str, sizeof(str), stdin);
+    for (int i = 0; i < strlen(str) - 1; i++) {
+        int count = 0;
+        for (int j = 0; j < strlen(str) - 1; j++) {
+            if (str[i] == str[j] && i != j) { 
                 count++;
-                break;
+                break; 
             }
         }
-        if(count!=0){
-            printf("%c",str[i]);
+        if (count == 0) {
+            printf("%c\n", str[i]);
+            found = 1;
+            break;
         }
-        else printf("-");
+    }
+    if (!found) {
+        printf("-");
     }
     return 0;
 }
