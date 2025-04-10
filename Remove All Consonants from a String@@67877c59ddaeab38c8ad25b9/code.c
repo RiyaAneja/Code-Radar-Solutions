@@ -5,7 +5,7 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int len= strlen(str);
     for(int i=0;i<len;i++){
-        if(str[i]>'A'&&str[i]<'Z'){
+        if(str[i]>='A'&&str[i]<='Z'){
             str[i]=' ';
         }
     }
