@@ -21,18 +21,28 @@
 
 int main() {
     char str[100];
+    int foundBinaryDigit = 0; // Flag to indicate if a binary digit is found
+
+    // Read a line of input
     fgets(str, sizeof(str), stdin);
     
-    // Remove newline character if present
+    // Remove the newline character if present
     str[strcspn(str, "\n")] = 0;
 
+    // Check for binary digits
     for (int i = 0; i < strlen(str); i++) {
         if (str[i] == '0' || str[i] == '1') {
-            printf("Yes\n");
-            return 0; // Exit immediately upon finding a binary digit
+            foundBinaryDigit = 1; // Set flag if a binary digit is found
+            break; // Exit the loop early
         }
     }
-    
-    printf("No\n");
+
+    // Output result based on the flag
+    if (foundBinaryDigit) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+
     return 0;
 }
