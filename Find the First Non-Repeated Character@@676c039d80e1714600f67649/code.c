@@ -4,9 +4,9 @@ int main() {
     char str[100];
     // scanf("%99s", str); 
     fgets(str,sizeof(str),stdin);
-    for (int i = 0; strlen(str); i++) {
+    for (int i = 0; str[i]!='\0'; i++) {
         int count = 0;
-        for (int j = 0; strlen(str); j++) {
+        for (int j = 0; str[j]!='\0'; j++) {
             if (str[j] == str[i]) count++;
         }
         if (count == 1) {
