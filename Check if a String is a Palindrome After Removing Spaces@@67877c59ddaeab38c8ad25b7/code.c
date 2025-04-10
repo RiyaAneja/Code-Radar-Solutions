@@ -10,7 +10,7 @@ int main() {
         }
     }
     result[j] = '\0';
-    int length=strlen(result)
+    int length=strlen(result);
     // char str1[100];
     strcpy(str1,result);
     for(int i=0,j=length-1;i<j;i++,j--){
