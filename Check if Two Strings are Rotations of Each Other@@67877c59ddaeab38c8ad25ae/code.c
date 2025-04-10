@@ -6,7 +6,7 @@ int main(){
     fgets(str2,sizeof(str2),stdin);
     int len=strlen(str1);
     int len2=strlen(str2);
-    for(int i=0;i<len1;i++){
+    for(int i=0;i<len;i++){
         for(int j=i+1;j<len;j++){
             if(str1[i]<str1[j]){
                 str1[i]=str1[j];
