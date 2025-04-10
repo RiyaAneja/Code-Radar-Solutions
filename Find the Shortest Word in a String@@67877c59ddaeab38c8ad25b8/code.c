@@ -11,7 +11,7 @@ int main() {
         if (str[i] != ' ' && str[i] != '\0') {
             currentWord[currentLength++] = str[i]; 
         } else {
-            if (currentLength < strlen(shortest)) {
+            if (currentLength > strlen(shortest)) {
                 currentWord[currentLength] = '\0'; 
                 strcpy(shortest, currentWord); 
             }
