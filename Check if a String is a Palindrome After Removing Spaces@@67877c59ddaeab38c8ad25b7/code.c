@@ -14,9 +14,9 @@ int main() {
     // char str1[100];
     strcpy(str1,result);
     for(int i=0,j=length-1;i<j;i++,j--){
-        char temp=str[i];
-        str[i]=str[j];
-        str[j]=temp;
+        char temp=result[i];
+        result[i]=result[j];
+        result[j]=temp;
     }
     if(strcmp(str1,result)==0){
         printf("Yes");
