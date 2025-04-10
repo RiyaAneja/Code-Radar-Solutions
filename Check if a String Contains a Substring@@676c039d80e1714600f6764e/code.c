@@ -1,20 +1,33 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+
+int main() {
     char str[100], sbstr[100];
-    int j;
-    fgets(str,sizeof(str),stdin);
-    fgets(sbstr,sizeof(sbstr),stdin);
-    int a=strlen(str);
-    int b= strlen(sbstr);
-    for(int i=0;i<a;i++){
-        for(int j=0;j<b;j++){
-            if(str[i+j]!=sbstr[j]){
+    int a, b, i, j, found = 0;
+
+    fgets(str, sizeof(str), stdin);
+    fgets(sbstr, sizeof(sbstr), stdin);
+
+    a = strlen(str);
+    b = strlen(sbstr);
+    sbstr[b - 1] = '\0'; // Remove newline from sbstr
+
+    for (i = 0; i <= a - b; i++) {
+        for (j = 0; j < b; j++) {
+            if (str[i + j] != sbstr[j]) {
                 break;
             }
         }
-        if(j==b) printf("Yes");
-        else printf("No");
+        if (j == b) {
+            found = 1; // Substring found
+            break;
+        }
     }
+
+    if (found)
+        printf("Yes\n");
+    else
+        printf("No\n");
+
     return 0;
 }
