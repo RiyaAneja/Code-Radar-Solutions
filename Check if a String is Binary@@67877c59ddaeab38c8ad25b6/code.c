@@ -9,7 +9,7 @@ int main(){
             bin=0;
         }
     }
-    if(bin=1) printf("Yes");
+    if(bin==1) printf("Yes");
     else printf("No");
     return 0;
 }
