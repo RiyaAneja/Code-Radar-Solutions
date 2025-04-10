@@ -2,24 +2,20 @@
 #include <string.h>
 int main() {
     char str[100];
-    int found = 0;
     fgets(str, sizeof(str), stdin);
-    for (int i = 0; i < strlen(str) - 1; i++) {
-        int count = 0;
-        for (int j = 0; j < strlen(str) - 1; j++) {
-            if (str[i] == str[j] && i != j) { 
-                count++;
-                break; 
+    for (int i = 0; str[i] != '\n'; i++) { 
+        int repeated = 0;
+        for (int j = 0; str[j] != '\n'; j++) {
+            if (str[i] == str[j] && i != j) {
+                repeated = 1;
+                break;
             }
         }
-        if (count == 0) {
+        if (!repeated) { 
             printf("%c\n", str[i]);
-            found = 1;
-            break;
+            return 0;
         }
     }
-    if (!found) {
-        printf("-");
-    }
+    printf("-");
     return 0;
 }
