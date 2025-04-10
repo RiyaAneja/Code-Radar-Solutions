@@ -7,7 +7,7 @@ int main(){
     scanf("%c",&replace);
     int length=strlen(str);
     for(int i=0;i<length;i++){
-        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U'){
             str[i]=replace;
         }
     }
