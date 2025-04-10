@@ -1,21 +1,29 @@
 #include <stdio.h>
 #include <string.h>
+#define MAX_LENGTH 1000
 int main() {
-    char str[100], longest[100] = "", temp[100] = "";
-    int maxLength = 0, len = 0;
+    char str[MAX_LENGTH];
+    char longestWord[MAX_LENGTH] = "";
+    char currentWord[MAX_LENGTH] = "";
     fgets(str, sizeof(str), stdin);
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] == ' ' || str[i] == '\n') {
-            temp[len] = '\0';
-            if (len > maxLength) {
-                maxLength = len;
-                strcpy(longest, temp);
-            }
-            len = 0;
+    str[strcspn(str, "\n")] = 0;
+    for (int i = 0; ; i++) {
+        if (str[i] != ' ' && str[i] != '\0') {
+            currentWord[strlen(currentWord)] = str[i];
+            currentWord[strlen(currentWord) + 1] = '\0'; 
         } else {
-            temp[len++] = str[i];
+            if (strlen(currentWord) > strlen(longestWord)) {
+                strcpy(longestWord, currentWord);
+            }
+            currentWord[0] = '\0';
+        }
+        if (str[i] == '\0') {
+            break;
         }
     }
-    printf("%s\n", longest);
+    if (strlen(currentWord) > strlen(longestWord)) {
+        strcpy(longestWord, currentWord);
+    }
+    printf("%s\n", longestWord);
     return 0;
 }
