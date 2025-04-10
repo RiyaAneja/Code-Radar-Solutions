@@ -16,12 +16,13 @@
 //         printf("No");
 //     return 0;
 // }
+
 #include <stdio.h>
 #include <string.h>
 
 int main() {
     char str[100];
-    int foundBinaryDigit = 0; // Flag to indicate if a binary digit is found
+    int isBinary = 0; // Flag to indicate if a binary digit is found
 
     // Read a line of input
     fgets(str, sizeof(str), stdin);
@@ -32,13 +33,13 @@ int main() {
     // Check for binary digits
     for (int i = 0; i < strlen(str); i++) {
         if (str[i] == '0' || str[i] == '1') {
-            foundBinaryDigit = 1; // Set flag if a binary digit is found
+            isBinary = 1; // Set flag if a binary digit is found
             break; // Exit the loop early
         }
     }
 
     // Output result based on the flag
-    if (foundBinaryDigit) {
+    if (isBinary) {
         printf("Yes\n");
     } else {
         printf("No\n");
