@@ -6,7 +6,7 @@ int main() {
     fgets(str, sizeof(str), stdin);
     for(int k=0;k<strlen(str);k++){
         if(str[k]>='A'&&str[k]<='Z'){
-            str[k]=str[k]-32;
+            str[k]=str[k]+32;
         }
     }
     for (i = 0; str[i] != '\0'; i++) {
