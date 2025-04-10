@@ -10,7 +10,7 @@ int main() {
         }
         else bin--;
     }
-    if(bin=strlen(str)) 
+    if(bin==strlen(str)) 
         printf("Yes");
     else 
         printf("No");
