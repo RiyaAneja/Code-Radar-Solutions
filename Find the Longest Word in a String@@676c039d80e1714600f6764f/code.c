@@ -21,10 +21,6 @@ int main() {
             break;
         }
     }
-    // if (currentLength > strlen(longestWord)) {
-    //     currentWord[currentLength] = '\0'; 
-    //     strcpy(longestWord, currentWord); 
-    // }
     printf("%s\n", longestWord);
     return 0;
 }
