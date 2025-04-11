@@ -20,7 +20,6 @@ void findShortestWord(char str[]) {
 }
 int main() {
     char str[100];
-    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin); 
     str[strcspn(str, "\n")] = '\0'; 
     findShortestWord(str);
