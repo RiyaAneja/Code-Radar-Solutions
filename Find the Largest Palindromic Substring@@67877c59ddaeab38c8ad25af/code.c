@@ -25,7 +25,7 @@ int main() {
         }
     }
     for (int i = start; i < start + maxLength; i++) {
-        puts(str[i]); 
+        printf("%c",str[i]); 
     }
     return 0;
 }
